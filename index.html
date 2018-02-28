@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vocé</title>
+    <!--Favicon-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./public/img/Favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./public/img/Favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./public/img/Favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./public/img//Favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./public/img//Favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./public/img//Favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./public/img//Favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./public/img//Favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./public/img//Favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./public/img//Favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./public/img//Favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./public/img//Favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./public/img//Favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Vocé - Knowing where to hit"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./public/img//Favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./public/img//Favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./public/img//Favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./public/img//Favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./public/img//Favicon/mstile-310x310.png" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav class="background">
+            <div class="nav-wrapper">
+               <a class="button-collapse pointer" data-activates="slide-out" id="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <a href="#" class="brand-logo">
+                    <img class="nav-img" src="./public/img/Logo-blanco-01.png">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down center-ul">
+                    <li class="li-selected" id="adn">
+                        <a class="white-text li-text li-text" href="#show-adn" data-language="adn">Nuestro ADN</a>
+                    </li>
+                    <li class="li-selected" id="nosotros">
+                        <a class="white-text li-text li-text" href="#show-nosotros" data-language="we">Quiénes somos</a>
+                    </li>
+                    <li class="li-selected" id="servicios">
+                        <a class="white-text li-text" href="#show-servicios" data-language="services">Servicios</a>
+                    </li>
+                    <li class="li-selected" id="clientes">
+                        <a class="white-text li-text" href="#show-colombia" data-language="clients">Clientes</a>
+                    </li>
+                    <li class="li-selected" id="equipo">
+                        <a class="white-text li-text" href="#show-equipo" data-language="team">Equipo</a>
+                    </li>
+                    <li class="li-selected li-last" id="contacto">
+                        <a class="white-text li-text" href="#show-contacto" data-language="contact">Contacto</a>
+                    </li>
+                    <li class="btn-flags">
+                        <input value="en" type="radio" name="rdb_language" id="optionEN" checked>
+                        <label for="optionEN">
+                            <img class="flags" src="./public/img/flag-us.svg" alt="Flag USA">
+                        </label>
+                        <input value="es" type="radio" name="rdb_language" id="optionES">
+                        <label for="optionES">
+                            <img class="flags" src="./public/img/flag-es.svg" alt="Flag Spain">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Sidenav -->
+    <ul class="side-nav" id="slide-out">
+        <li>
+            <div class="btn-flags">
+                <input value="en" type="radio" name="rdb_language" id="optionENMob" checked>
+                <label for="optionENMob">
+                    <img class="flags" src="./public/img/flag-us.svg" alt="Flag USA">
+                </label>
+                <input value="es" type="radio" name="rdb_language" id="optionESMob">
+                <label for="optionESMob">
+                    <img class="flags" src="./public/img/flag-es.svg" alt="Flag Spain">
+                </label>
+            </div>
+        </li>
+        <li>
+            <a class="white-text li-text" href="#show-adn" data-language="adn">Nuestro ADN</a>
+        </li>
+        <li>
+            <a class="white-text li-text" href="#show-nosotros" data-language="we">Quiénes somos</a>
+        </li>
+        <li>
+            <a class="white-text li-text" href="#show-servicios" data-language="services">Servicios</a>
+        </li>
+        <li>
+            <a class="white-text li-text" href="#show-colombia" data-language="clients">Clientes</a>
+        </li>
+        <li>
+            <a class="white-text li-text" href="#show-equipo" data-language="team">Equipo</a>
+        </li>
+        <li>
+            <a class="white-text li-text" href="#show-contacto" data-language="contact">Contacto</a>
+        </li>
+    </ul>
+
+    <!-- Slider -->
+    <div class="slider" style="height: 27em;" id="show-adn">
+        <ul class="slides">
+            <li>
+            <img src="./public/img/slide1.jpg"> <!-- random image -->
+            <div class="caption center-align">
+                <h4 class="h3-title" data-language="qualtrics1">"Convertir empleados en embajadores"</h4>
+            </div>
+            </li>
+            <li>
+            <img src="./public/img/slide2.jpg"> <!-- random image -->
+            <div class="caption left-align">
+                <h3 class="h3-title" data-language="qualtrics2">"Convertir marcas en íconos"</h3>
+            </div>
+            </li>
+            <li>
+            <img src="./public/img/slide4.jpg"> <!-- random image -->
+            <div class="caption right-align">
+                <h3 class="h3-title" data-language="qualtrics3">"Convertir consumidores en fanáticos"</h3>
+            </div>
+            </li>
+            <li>
+            <img src="./public/img/slide5.jpeg"> <!-- random image -->
+            <div class="caption center-align">
+                <h3 class="h3-title" data-language="qualtrics4">"Convertir productos en obsesiones"</h3>
+            </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ADN -->
+    <div class="background-adn">
+        <div class="row">
+            <div class="col s6 m5 l4 offset-s3 offset-l1">
+                <img class="img-filosofia" src="./public/img/1.png">
+            </div>
+            <div class="col s9 m7 l4 offset-s1 contenido-filosofia" data-language="adn-text">
+                En tiempos de BIG DATA, 
+                tener la data ya no es suficiente 
+                Ir tras los Insights detrás 
+                de la data, las emociones 
+                detrás de los indicadores 
+                y poder tener acción y 
+                gestión en tiempo real, 
+                es lo que hoy 
+                GENERA DIFERENCIA.
+                En VOCÉ te ayudamos a saber exactamente donde debes actuar, para que puedas rediseñar procesos que generen experiencias memorables en tus clientes y colaboradores.
+            </div>
+        </div>
+    </div>
+
+    <!-- Parallax -->
+    <div class="parallax-container" id="show-nosotros">
+        <div class="parallax"><img src="./public/img/road.jpg"></div>
+    </div>
+
+<!-- Titulo Servicios -->
+    <div class="wrapperTitle nosotrosTitle">
+        <div class="q-line-nosotros z-depth-4"></div>
+        <div class="nosotros-title">
+            <span class="white-text serv" data-language="who">QUIENES SOMOS</span>
+        </div>
+    </div>
+
+    <!-- Quienes somos -->
+    <div class="nosotros">
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <div class="row">
+                    <div class="col s12 m3 l4 text-center">
+                        <img src="./public/img/voce.png" alt="" class="voce-img">
+                    </div>
+                    <div class="col s12 m9 l8 span-text" data-language="we-are-voce">
+                        Partner de Qualtrics en Colombia.
+                        Certificados  oficialmente para implementación y manejo de las herramientas. Soporte local en Colombia de primera línea.                         
+                        Contamos con todo el entrenamiento y trayectoria de Qualtrics, y sumamos a cada proyecto, profesionales locales con amplia experiencia en cada caso de consultoría requerido en cualquiera de los proyectos de clientes (Experiencia de clientes, Experiencia de empleados, Experiencia de marca o Experiencia de producto) Nuestra sucursal principal está ubicada en Medellín, pero contamos con la Capacidad para movernos en todo el territorio Latinoamericano.
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l6">
+                <div class="row">
+                    <div class="col s12 m3 l4 text-center">
+                        <img src="./public/img/qualtrics.png" alt="" class="voce">
+                    </div>
+                    <div class="col s12 m9 l8 span-text" data-language="we-are-qualtrics" >
+                        Qualtrics es la empresa líder mundial en medición de Insights de clientes, empleados y mercados.
+                        Creada desde el 2002, nació como un software para medición de investigación de mercados, y hoy se convierte en la solución líder en gestionar toda la experiencia, ayudando a las organizaciones a crear y poner en marcha sus programas de experiencia desde la visión de la marca, los clientes, los productos o servicios y los empleados.    
+                    </div>    
+                </div>
+                <a class="waves-effect waves-light btn pulse btn-qualtrics" href="https://www.qualtrics.com/" target="_blank" data-language="visit-qualtrics">Visita Qualtrics</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- Parallax -->
+     <div class="parallax-container" id="show-servicios">
+        <div class="parallax"><img src="./public/img/road.jpg"></div>
+    </div>
+
+    <!-- Titulo Servicios -->
+    <div class="wrapperTitle serviciosTitle" >
+        <div class="servicios-title">
+            <span class="white-text serv" data-language="serv">SERVICIOS</span>
+        </div>
+    </div>
+   
+    <!-- Servicios -->
+    <div class="row">    
+        <ul id="tabs-swipe-demo" class="tabs background-servicios">
+            <li class="tab col s3 swipe-text"><a class="active" href="#test-swipe-1" data-language="serv1">CLIENTE</a></li>
+            <li class="tab col s3"><a href="#test-swipe-2" data-language="serv2">EMPLEADO</a></li>
+            <li class="tab col s3"><a href="#test-swipe-3" data-language="serv3">MARCA</a></li>
+            <li class="tab col s3"><a href="#test-swipe-4" data-language="serv4">PRODUCTO</a></li>
+        </ul>
+        <div id="test-swipe-1" class="col s12">
+            <div class="row">
+                <div class="col s12 m5 offset-l1 text-center">
+                    <img src="./public/img/cx.png" alt="" class="img-swipe">
+                    <p class="swipe-text" data-language="cx">
+                        Crea una gran lealtad de marca preguntando acerca de las experiencias, preferencias y expectativas de tus clientes y actuando basado en esa retroalimentación  
+                    </p>
+                </div>
+                <div class="col s12 m6 l5 offset-l1 swipe-col">
+                    <div class="row">
+                        <div class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon17.png" alt="" class="icon-swipe">
+                            <span data-language="li-1" class="span-img">Medición de Omni-canal</span>
+                        </div>
+                        <div class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon16.png" alt="" class="icon-swipe">
+                            <span data-language="li-2" class="span-img">Retroinformación en la pagina Web y en-App</span>
+                        </div>
+                        <div   class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon20.png" alt="" class="icon-swipe">
+                            <span data-language="li-3" class="span-img">Reportes analíticos CX y dashboards</span>                        
+                        </div>
+                        <div class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon11.png" alt="" class="icon-swipe">
+                            <span data-language="li-4" class="span-img">Seguimientos y gestión de casos</span>
+                        </div>
+                        <div class="col s6 swipe-col-icon">
+                            <img src="./public/img/icon26.png" alt="" class="icon-swipe">
+                            <span data-language="li-5" class="span-img">Integración operacional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test-swipe-2" class="col s12">
+            <div class="row">
+                <div class="col s12 m5 offset-l1 text-center">
+                    <img src="./public/img/ex.png" alt="" class="img-swipe">
+                    <p class="swipe-text" data-language="ex">Mida el sentimiento de los empleados en todo su ciclo laboral, priorice los motivos claves basado en la experiencia del empleado, incremente la productividad a través del compromiso del empleado y construya equipos fuertes.
+                    </p>
+                </div>
+                <div class="col s12 m6 l5 offset-l1 swipe-col">
+                    <div class="row">
+                        <div class="col s12 swipe-col-icon"  >
+                            <img src="./public/img/icon7.png" alt="" class="icon-swipe">
+                            <span data-language="li-6" class="span-img">Percepción de marca</span>
+                        </div>
+                        <div   class="col s12 swipe-col-icon"  >
+                            <img src="./public/img/icon6.png" alt="" class="icon-swipe">
+                            <span data-language="li-7" class="span-img">Valor de marca</span>
+                        </div>
+                        <div   class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon15.png" alt="" class="icon-swipe">
+                            <span data-language="li-8" class="span-img">Publicidad y Pruebas de copia</span>                        
+                        </div>
+                        <div class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon3.png" alt="" class="icon-swipe">
+                            <span data-language="li-9" class="span-img">Segmentación y posicionamiento</span>
+                        </div>
+                        <div class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon27.png" alt="" class="icon-swipe">
+                            <span data-language="li-10" class="span-img">Investigación de la estrategia de marca</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test-swipe-3" class="col s12">
+            <div class="row">
+                <div class="col s12 m5 offset-l1 text-center">
+                        <img src="./public/img/bx.png" alt="" class="img-swipe">
+                        <p class="swipe-text" data-language="bx">Crea un “benchmarking” y rastree el conocimiento de su marca, valor, y percepciones, mejore la publicidad de su marca y optimice la estrategia de marca. 
+                        </p>
+                </div>
+                <div class="col s12 m6 l5 offset-l1 swipe-col">
+                    <div class="row">
+                        <div  class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon13.png" alt="" class="icon-swipe">
+                            <span data-language="li-11" class="span-img">Compromiso del empleado</span>
+                        </div>
+                        <div   class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon1.png" alt="" class="icon-swipe">
+                            <span data-language="li-12" class="span-img">Retroalimentación 360 del empleado</span>
+                        </div>
+                        <div   class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon29.png" alt="" class="icon-swipe">
+                            <span data-language="li-13" class="span-img">Evaluaciones de entrenamiento</span>                        
+                        </div>
+                        <div class="col s12 swipe-col-icon" >
+                            <img src="./public/img/icon5.png" alt="" class="icon-swipe">
+                            <span data-language="li-14" class="span-img">Entrevistas de salida</span>
+                        </div>
+                        <div class="col s12 swipe-col-icon" >
+                            <img src="./public/img/icon25.png" alt="" class="icon-swipe">
+                            <span data-language="li-15" class="span-img">Pre-contratación e incorporación</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test-swipe-4" class="col s12">
+            <div class="row">
+                <div class="col s12 m5 offset-l1 text-center">
+                        <img src="./public/img/px.png" alt="" class="img-swipe">
+                        <p class="swipe-text" data-language="px">Descubra necesidades insatisfechas del producto, priorice características del producto, mida la experiencia del usuario, y pronostique  adopción del mercado y uso
+                        </p>
+                </div>
+                <div class="col s12 m6 l5 offset-l1 swipe-col">
+                    <div class="row">
+                        <div class="col s12 swipe-col-icon" >
+                            <img src="./public/img/icon18.png" alt="" class="icon-swipe">
+                            <span data-language="li-16" class="span-img">Prueba de concepto</span>
+                        </div>
+                        <div class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon230.png" alt="" class="icon-swipe">
+                            <span data-language="li-17" class="span-img">Investigación de precio</span>
+                        </div>
+                        <div class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon19.png" alt="" class="icon-swipe">
+                            <span data-language="li-18" class="span-img">Experiencia del usuario</span>                        
+                        </div>
+                        <div class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon12.png" alt="" class="icon-swipe">
+                            <span data-language="li-19" class="span-img">Análisis de mercadotecnia</span>
+                        </div>
+                        <div class="col s12 swipe-col-icon">
+                            <img src="./public/img/icon23.png" alt="" class="icon-swipe">
+                            <span data-language="li-20" class="span-img">Análisis de conjoint</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parallax -->
+     <div class="parallax-container" id="show-colombia">
+        <div class="parallax"><img src="./public/img/road.jpg"></div>
+    </div>
+
+    
+    <!-- Titulo Clientes -->
+    <div class="wrapperTitle clientesTitle" >
+        <div class="q-line z-depth-4"></div>
+        <div class="clientes-title">
+            <span class="white-text q-col">COLOMBIA</span>
+        </div>
+    </div>
+    
+    <!-- Clientes Colombia-->
+    <div class="">
+        <div class="row col s12 q-colombia">
+            <div class="col s12 item-colombia">
+                <img class="img-clientes" src="./public/img/Qualtrics-Colombia/pat6.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Parallax -->
+     <div class="parallax-container">
+        <div class="parallax"><img src="./public/img/road.jpg"></div>
+    </div>
+
+     <!-- Titulo Clientes -->
+     <div class="wrapperTitle clientesTitle" id="show-mundo">
+        <div class="q-line z-depth-4"></div>
+        <div class="clientes-title">
+            <span class="white-text q-world" data-language="world">EL MUNDO</span>
+        </div>
+    </div>
+
+    <!-- Clientes Mundo-->
+    <div>
+        <div class="row col s12 q-colombia">
+            <div class="col s12 item-mundo">
+                <img class="img-clientes-world" src="./public/img/Qualtrics-Colombia/pat5.png" alt="">
+            </div>
+        </div>
+    </div>
+
+     <!-- Parallax -->
+    <div class="parallax-container"  id="show-equipo">
+        <div class="parallax"><img src="./public/img/road.jpg"></div>
+    </div>
+
+    <!-- Titulo Equipo -->
+    <div class="wrapperTitle equipoTitle">
+        <div class="servicios-title">
+            <span class="white-text team" data-language="team-title">EQUIPO</span>
+        </div>
+    </div>
+
+    <!-- Equipo -->
+    <div class="background-equipo">
+        <div class="row">
+            <div class="col s9 m4 l3 offset-s1 team-member">
+                <img id="Clara" class="circle img-team first-img z-depth-4" data-position="center" data-delay="50" 
+                    src="./public/img/Clara.jpg" alt="">
+                <div class="member-content">
+                    <h2 class="member-title" for="Clara">
+                        Clara Salazar Posada
+                    </h2>
+                    <div class="member-cargo" data-language="directora">
+                        Directora General
+                    </div>
+                    <div class="member-correo">
+                        clara.salazar@voce.com.co
+                    </div>
+                </div>
+            </div>
+            <div class="col s9 m4 l3 offset-s1 team-member">
+                <img id="Melina" class="circle img-team first-img z-depth-4" data-position="center" data-delay="50" 
+                    src="./public/img/Melina.png" alt="">
+                <div class="member-content">
+                    <h2 class="member-title" for="Clara">
+                        Melina Mejía Bedoya
+                    </h2>
+                    <div class="member-cargo" data-language="cargo">
+                            Equipo de soluciones
+                    </div>
+                    <div class="member-correo">
+                        melina.mejia@voce.com.co
+                    </div>
+                </div>
+            </div>
+            <div class="col s9 m4 l3 offset-s1 team-member">
+                <img id="Daniel" class="circle img-team first-img z-depth-4" data-position="center" data-delay="50" 
+                    src="./public/img/Daniel.png" alt="">
+                <div class="member-content">
+                    <h2 class="member-title" for="Clara">
+                        Daniel Vélez Marín
+                    </h2>
+                    <div class="member-cargo" data-language="cargo">
+                        Equipo de soluciones
+                    </div>
+                    <div class="member-correo">
+                        daniel.velez@voce.com.co
+                    </div>
+                </div>
+            </div>
+            <div class="col s9 m4 l3 offset-s1 team-member">
+                <img id="Alejandra" class="circle img-team first-img z-depth-4" data-position="center" data-delay="50" 
+                    src="./public/img/Alejandra.png" alt="">
+                <div class="member-content">
+                    <h2 class="member-title" for="Clara">
+                        Alejandra Rojas Echeverry
+                    </h2>
+                    <div class="member-cargo" data-language="cargo">
+                            Equipo de soluciones
+                    </div>
+                    <div class="member-correo">
+                        alejandra.rojas@voce.com.co
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parallax -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="./public/img/road.jpg"></div>
+    </div>
+   
+    <!-- Footer -->
+    <footer class="page-footer" id="show-contacto">
+        <div class="container footer-container">
+            <div class="row center">
+                <div class="col l6 m6 s12">
+                    <div class="row">
+                        <div class="col l6 m6 s12">
+                            <h5 class="white-text footer-text" data-language="find">Encuéntranos</h5>
+                            <ul>
+                                <li><p class="footer-find-us grey-text text-lighten-3 leelawadee footer-text-content">Tel. (57-4) 322-44-69</p></li>
+                                <li><p class="footer-find-us grey-text text-lighten-3 leelawadee footer-text-content" data-language="floor">Cra 48 # 20 -103. Segundo Piso</p></li>
+                                <li><p class="footer-find-us grey-text text-lighten-3 leelawadee footer-text-content">Medellín - Colombia</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l6 m6 s12">
+                    <div class="row" style="margin-bottom: 0;">
+                        <div class="col l12 m8 s12">
+                            <div class="row center" style="margin-bottom: 0;">
+                                <img class="img-footer" src="./public/img/3.png" alt="">
+                            </div>
+                            <div class="row valign-wrapper" style="margin-bottom: 0;">
+                                <div class="col l6 m6 s6">
+                                    <p class="white-text center demo-title" data-language="demo">Solicita un demo:</p>
+                                </div>
+                                <div class="col l6 m6 s6">
+                                    <a type="submit" href="https://sociabpo.co1.qualtrics.com/jfe/form/SV_2bIXhjCdNWOvzCZ" target="_blank" class="waves-effect waves-light btn btn-demo pulse" data-language="clic">Clic Aquí</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container" data-language="footer">
+            Hecho con ♥ en Medellín © 2018
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/materialize.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+<script type="text/javascript" src="./js/language.js"></script>
+
+</html>
